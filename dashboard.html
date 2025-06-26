@@ -4,9 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dashboard | Colana Systems</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="dashboard.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+
+
 </head>
 <body>
   <!-- Topbar -->
@@ -18,9 +23,11 @@
       <i class="fas fa-user-circle"></i>
     </div>
   </header>
+ 
 
+  
   <main class="main-container">
-    <!-- Sidebar (toggle visibility with JS) -->
+    <!-- Sidebar -->
     <aside class="sidebar" id="sidebar">
       <h2>Domains</h2>
       <div class="search-box">
@@ -42,17 +49,13 @@
       </div>
     </div>
 
-      <!-- Domain input -->
+    <!-- Domain input -->
     <div class="domain-input-wrapper">
-  <input type="text" id="domainInput" placeholder="Enter Domain" />
-  <button class="submit-btn" onclick="searchDomain()">
-    <i class="fas fa-arrow-up"></i>
-  </button>
-</div>
-
-</div>
-
-</div>
+      <input type="text" id="domainInput" placeholder="Enter Domain" />
+      <button class="submit-btn" onclick="searchDomain()">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </div>
   </main>
 
   <script src="script.js"></script>
