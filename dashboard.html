@@ -29,7 +29,8 @@
   <main class="main-container">
     <!-- Sidebar -->
     <aside class="sidebar" id="sidebar">
-      <h2>Domains</h2>
+      <h2 class="sidebar-title" id="sidebarTitle" onclick="toggleSidebar()">Domains</h2>
+
       <div class="search-box">
         <input type="text" placeholder="Search for Domains" id="searchHistory" oninput="filterHistory()" />
         <i class="fas fa-search"></i>
@@ -41,12 +42,14 @@
 
     <!-- Dashboard main area -->
     <div class="dashboard-box">
+      
       <!-- Hamburger icon -->
-      <div class="sidebar-icon" onclick="toggleSidebar()">
+      <div class="menu-toggle" id="menuToggle" onclick="toggleSidebar()">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
       </div>
+    
     </div>
 
     <!-- Domain input -->

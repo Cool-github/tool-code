@@ -30,6 +30,7 @@
 
 /* inner slide box , toogles on menu button */
 /* Sidebar styles */
+
 .sidebar {
   width: 260px;
   background-color: #f6f9fc;
@@ -38,15 +39,33 @@
   border-right: 2px solid #c0daf3;
   display: none;
   flex-direction: column;
+  position: absolute;
+  top: 17%; /* below topbar */
+  left: 0;
+  height: calc(100vh - 90px);
+  z-index: 2;
 }
-
 .sidebar.active {
   display: flex;
 }
 
+.domain-input-wrapper {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  right: 32px;
+  transition: left 0.3s;
+}
+
+.sidebar.active ~ .domain-input-wrapper {
+  left: 300px; /* push input to the right when sidebar is open */
+}
+
+
 .sidebar h2 {
   margin-top: 0;
-  font-size: 20px;
+  font-size: 30px;
+  color: #1e3a5f;
 }
 
 .search-box {
@@ -58,6 +77,12 @@
   border: 1px solid #c0daf3;
   margin: 12px 0;
 }
+.search-box i {
+    color: #94b4d9;
+    width:10px;
+  font-size: 20px;
+  padding-right: 10px;
+}
 
 .search-box input {
   border: none;
@@ -65,21 +90,19 @@
   flex: 1;
   padding: 4px;
   font-size: 14px;
+  width:35px;
 }
 
-.search-box i {
-  color: #94b4d9;
-}
 
 .new-link {
   color: #205bce;
-  font-size: 15px;
+  font-size: 20px;
   margin: 10px 0;
   cursor: pointer;
 }
 
 .history-title {
-  font-size: 14px;
+  font-size: 20px;
   margin-bottom: 8px;
 }
 
@@ -92,7 +115,7 @@
 
 #historyList li {
   padding: 6px 4px;
-  font-size: 14px;
+  font-size: 18px;
   cursor: pointer;
 }
 
@@ -139,6 +162,7 @@
   justify-content: space-between;
   padding: 20px 24px;
   box-sizing: border-box;
+  height: 180px;
   font-family: 'Inter', sans-serif;
   
 }
@@ -184,8 +208,8 @@
   align-items: center;
   justify-content: center;
 
-  height: 100px;
-  width: 100px;
+  height: 60px;
+  width: 60px;
   /* color: blue; */
 }
 

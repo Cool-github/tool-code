@@ -96,9 +96,27 @@ function validateForgot() {
   return false; // prevent form submission (remove this if using backend)
 }
 
+// function toggleSidebar() {
+//   const sidebar = document.getElementById("sidebar");
+//   sidebar.classList.toggle("active");
+// }
+
 function toggleSidebar() {
   const sidebar = document.getElementById("sidebar");
+  const menuToggle = document.getElementById("menuToggle");
+  const sidebarTitle = document.getElementById("sidebarTitle");
+  const domainInputWrapper = document.querySelector(".domain-input-wrapper");
+
   sidebar.classList.toggle("active");
+
+  // Hide the hamburger icon
+  if (sidebar.classList.contains("active")) {
+    menuToggle.style.display = "none";
+    domainInputWrapper.style.left = "300px"; // push right
+  } else {
+    menuToggle.style.display = "block";
+    domainInputWrapper.style.left = "32px"; // reset
+  }
 }
 
 function focusInput() {
