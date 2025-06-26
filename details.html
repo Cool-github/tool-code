@@ -3,18 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <title>Domain Details</title>
-  <link rel="stylesheet" href="domain-details.css">
+  <link rel="stylesheet" href="domain.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
 </head>
 <body>
-  <header class="dd-topbar">
-    <h1 class="dd-logo">Colana Systems</h1>
-    <div class="dd-icons">
-      <a href="dashboard.html">Dashboard</a>
+  <header class="topbar">
+    <h1 class="logo">Colana Systems</h1>
+    <div class="icons">
+      <!-- <a href="dashboard.html">Dashboard</a> -->
+      <i class="fas fa-bell"></i>
+      <i class="fas fa-cog"></i>
+      <i class="fas fa-user-circle"></i>
     </div>
   </header>
 
   <main class="dd-container">
-    <h2 class="dd-heading">Domain Details for <span id="dd-domain-name"></span></h2>
+
+    <nav class="vertical-sidebar">
+      <i class="fas fa-home" onclick="goToPage('dashboard.html')"></i>
+      <i class="fa-solid fa-inbox" onclick="goToPage('inbox.html')"></i>
+      <i class="fas fa-chart-bar" onclick="goToPage('seo.html')"></i>
+      <i class="fas fa-globe" onclick="goToPage('geo.html')"></i>
+      <i class="fas fa-qrcode" onclick="goToPage('trackers.html')"></i>
+    </nav>
+
+    <div class="overall-container">
+        <h2 class="dd-heading">Domain Details for <span id="dd-domain-name"></span></h2>
 
     <div class="dd-card-row">
       <div class="dd-card">
@@ -41,6 +58,8 @@
       </ul>
     </section>
   </main>
+    </div>
+    
 
   <script src="domain-details.js"></script>
 </body>
