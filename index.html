@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Login to Your Dashboard</h2>
+        <p>Analyze and track website performance with powerful insights —<br> New tools and features added every week.</p>
+        
+    <div class="inner-container">
+      <div class="login-row">
+        <div class="login-section">
+          <div class="LoginForm">
+            <form id="loginForm" onsubmit="return validateLogin()">
+              <input type="text" id="loginEmail" placeholder="Email">
+              <div class="error" id="loginEmailError"></div>
+              <input type="password" id="loginPassword" placeholder="Password">
+              <span id="forgotWrapper">
+                <p><a id="forgotLink" href="forgot.html">Forgot password?</a></p>
+              </span>
+              <div class="error" id="loginPasswordError"></div>
+              <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a class="Link" href="signup.html">Sign in</a></p>
+          </div>
+          <div class="divider">/</div>
+          <div class="google-signin">
+            <a href="google-account.html" class="google-link">
+              <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google logo" class="google-icon" />
+              <span class="google-text">Sign in with Google</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

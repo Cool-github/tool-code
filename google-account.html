@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Choose Account</title>
+  <style>
+    body {
+      background-color: #3a3a3a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+    .modal {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 400px;
+    }
+    h3 {
+      text-align: center;
+      color: #003366;
+    }
+    .option {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+      cursor: pointer;
+    }
+    .option img {
+      width: 30px;
+      margin-right: 10px;
+    }
+    .option span {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="modal">
+    <h3>Choose an account</h3>
+    <div class="option" onclick="window.location.href='dashboard.html'">
+      <img src="https://www.gstatic.com/images/icons/material/system/2x/account_circle_white_48dp.png" />
+      <span>Anu Reddy<br><small>k.anureddy1625@gmail.com</small></span>
+    </div>
+    <div class="option" onclick="alert('Use another account')">
+      <img src="https://www.gstatic.com/images/icons/material/system/2x/add_circle_white_48dp.png" />
+      <span>Use another account</span>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!-- domain.html (Main Overview Page) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Domain Overview</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="topbar">
+    <h1 class="logo">Colana Systems</h1>
+    <div class="icons">
+      <a href="dashboard.html">Dashboard</a>
+      <i class="fas fa-bell"></i>
+      <i class="fas fa-cog"></i>
+      <i class="fas fa-user-circle"></i>
+    </div>
+  </header>
+
+  <main class="overview-container">
+    <nav class="vertical-sidebar">
+      <i class="fas fa-home" onclick="goToPage('dashboard.html')"></i>
+      <i class="fas fa-chart-bar" onclick="goToPage('seo.html')"></i>
+      <i class="fas fa-globe" onclick="goToPage('geo.html')"></i>
+      <i class="fas fa-qrcode" onclick="goToPage('trackers.html')"></i>
+    </nav>
+
+    <section class="overview-box">
+      <h2>Company Overview</h2>
+      <div class="top-row">
+        <div class="card">
+          <p>Original Domain</p>
+          <h3 id="domainName">Loading...</h3>
+          <p><strong>Timestamp:</strong> <span id="timestamp">--</span></p>
+          <p><strong>Brand:</strong> Colana</p>
+        </div>
+        <div class="card">
+          <p>Business Profiles <i class="fas fa-pen"></i></p>
+          <h4><strong>Technology</strong> <strong>Marketing</strong></h4>
+        </div>
+      </div>
+
+      <div class="grid-section">
+  <div class="grid-box" onclick="goToDomainSection('domain-details.html')">Domain Details</div>
+  <div class="grid-box" onclick="goToDomainSection('pagespeed.html')">Pagespeed</div>
+  <div class="grid-box" onclick="goToDomainSection('seo.html')">SEO</div>
+  <div class="grid-box" onclick="goToDomainSection('geo.html')">GEO</div>
+  <div class="grid-box" onclick="goToDomainSection('trackers.html')">Trackers</div>
+</div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forgot Password</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Forgot your password?</h2>
+    <form id="forgotForm" onsubmit="return validateForgot()">
+      <input type="email" id="forgotEmail" placeholder="Enter email address">
+      <div class="error" id="forgotEmailError"></div>
+      <div class="success" id="forgotEmailSuccess"></div>
+
+      <button type="submit">Send code</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

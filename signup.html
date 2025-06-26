@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="wrapper">
+    
+    <div class="left-bg"></div> <!-- background section -->
+
+    <div class="container right">
+      <h2>Create an account</h2>
+      <p>Already have an account? <a class="Link" href="index.html">Log in</a></p>
+      <div class="success-message" id="successMessage" style="display: none; color: green; margin-bottom: 10px;"></div>
+      <form id="signupForm" onsubmit="return validateSignup()">
+          <input type="text" id="signupUsername" placeholder="Username">
+          <div class="error" id="signupUsernameError"></div>
+          <input type="email" id="signupEmail" placeholder="Email address">
+          <div class="error" id="signupEmailError"></div>
+          <input type="password" id="signupPassword" placeholder="Password">
+          <div class="error" id="signupPasswordError"></div>
+          
+          <div class="terms">
+            <label for="agree">
+              I agree to the <a href="terms.html" target="_blank">Terms of Use</a> and 
+              <a href="privacy.html" target="_blank">Privacy Policy</a>
+            </label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="captcha">
+            <label for="captcha">I'm not a robot</label>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/RecaptchaLogo.svg/1200px-RecaptchaLogo.svg.png" alt="Captcha Image">
+          </div>
+          <div class="error" id="captchaError"></div>
+          <button type="submit">Create an account</button>
+
+      </form>
+    </div> 
+
+  </div>
+
+     
+
+  <script src="script.js"></script>
+</body>
+</html>
